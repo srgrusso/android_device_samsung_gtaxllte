@@ -1,1 +1,2 @@
+add_lunch_combo rr_gtaxllte-userdebug
 add_lunch_combo lineage_gtaxllte-userdebug
