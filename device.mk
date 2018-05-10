@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
     fstab.samsungexynos7870 \
     init.baseband.rc \
     init.rilchip.rc \
+    init.power.rc \
     init.samsung.rc \
     init.samsungexynos7870.rc \
     init.samsungexynos7870.usb.rc \
@@ -105,7 +106,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init/android.hardware.media.omx@1.0-service.rc:system/vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 
 PRODUCT_PACKAGES += \
+    memtrack.exynos5 \
     hwcomposer.exynos5
+
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
@@ -120,13 +126,12 @@ PRODUCT_PACKAGES += \
 #    AdvancedDisplay
 
 PRODUCT_PACKAGES += \
-    libshim_camera \
-    libexynoscamera_shim
+    android.hardware.camera.provider@2.4-impl-legacy \
+    camera.device@1.0-impl-legacy
 
 PRODUCT_PACKAGES += \
-    camera.device@3.2-impl \
-    camera.device@1.0-impl \
-    android.hardware.camera.provider@2.4-impl
+    libexynoscamera_shim \
+    libcamera_client_shim
 
 PRODUCT_PACKAGES += \
     Snap
