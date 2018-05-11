@@ -219,10 +219,6 @@ TARGET_LD_SHIM_LIBS += \
 TARGET_LD_SHIM_LIBS += \
     /system/lib/hw/camera.universal7870.so|/vendor/lib/libshim_camera.so
 
-# Shims: gpsd
-TARGET_LD_SHIM_LIBS += \
-    /system/bin/gpsd|/vendor/lib/gpsd_shim.so
-
 # SELinux
 BOARD_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy
 
