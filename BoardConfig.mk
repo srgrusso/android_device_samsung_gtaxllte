@@ -175,6 +175,9 @@ WPA_SUPPLICANT_VERSION           := VER_0_8_X
 # Wifi loader
 BOARD_HAVE_SAMSUNG_WIFI := true
 
+TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
+    /system/vendor/bin/hw/rild=27
+
 # Charger
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_CHARGER_ENABLE_SUSPEND := true
