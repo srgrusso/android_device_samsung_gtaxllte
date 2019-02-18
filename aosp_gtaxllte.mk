@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/telephony.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := aosp_gtaxllte
@@ -32,8 +32,14 @@ PRODUCT_MODEL := SM-T585
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-# PixelExperience stuff.
+# boot animation.
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# gapps arch
 TARGET_GAPPS_ARCH := arm64
+
+# Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="srgrusso"
 
 BUILD_FINGERPRINT := Xiaomi/sagit/sagit:7.1.1/NMF26X/V8.2.17.0.NCACNEC:user/release-keys
