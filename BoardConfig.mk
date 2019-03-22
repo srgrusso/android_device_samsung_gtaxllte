@@ -250,5 +250,7 @@ TARGET_LD_SHIM_LIBS += \
 # SELinux
 BOARD_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy
 
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Inherit from the proprietary version
 -include vendor/samsung/gtaxllte/BoardConfigVendor.mk
