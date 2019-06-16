@@ -24,6 +24,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit some AOSP stuff.
 $(call inherit-product, vendor/aosp/config/common.mk)
 
+# Inherit some Telephony packages.
+$(call inherit-product, vendor/aosp/config/telephony.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := aosp_gtaxllte
 PRODUCT_DEVICE := gtaxllte
