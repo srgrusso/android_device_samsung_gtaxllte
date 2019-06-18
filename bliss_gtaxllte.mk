@@ -33,6 +33,14 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
+#Apps
+PRODUCT_PACKAGES += \
+    Camera2 \
+    Gallery2 \
+    Music \
+    Calendar \
+    DeskClock
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=gtaxlltexx \
     PRIVATE_BUILD_DESC="gtaxlltexx-user 8.1.0 M1AJQ T585XXU4CRK5 release-keys"
