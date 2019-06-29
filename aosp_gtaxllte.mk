@@ -21,11 +21,16 @@ $(call inherit-product, device/samsung/gtaxllte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common XenonHD stuff..
+$(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
+
+XENONHD_BUILD := true
+
+# Boot animation resolution
+TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_gtaxllte
+PRODUCT_NAME := aosp_gtaxllte
 PRODUCT_DEVICE := gtaxllte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T585
