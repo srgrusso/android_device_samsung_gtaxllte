@@ -22,10 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
+
+LIQUID_BUILD := true
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_gtaxllte
+PRODUCT_NAME := liquid_gtaxllte
 PRODUCT_DEVICE := gtaxllte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T585
