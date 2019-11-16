@@ -110,9 +110,6 @@ QCOM_BT_USE_SMD_TTY := true
 TARGET_AUDIOHAL_VARIANT := samsung
 TARGET_POWERHAL_VARIANT := samsung
 
-# Lineage HW
-JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(LOCAL_PATH)/lineagehw|**/*.java
-
 # Samsung Camera
 BOARD_USE_SAMSUNG_CAMERAFORMAT_NV21 := true
 TARGET_USES_MEDIA_EXTENSIONS := true
@@ -234,17 +231,6 @@ BOARD_ROOT_EXTRA_FOLDERS := efs cpefs
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
-
-# Dexpreopt
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
-    endif
-  endif
-endif
-# DONT_DEXPREOPT_PREBUILTS := true
 
 # Recovery
 #RECOVERY_VARIANT := twrp
