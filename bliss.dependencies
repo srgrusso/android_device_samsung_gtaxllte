@@ -9,7 +9,7 @@
     "remote": "github",
     "repository": "srgrusso/android_vendor",
     "target_path": "vendor/samsung/gtaxllte",
-    "revision": "gtaxllte-lineage-17.0_64"
+    "revision": "gtaxllte-lineage-17.1_64"
   },
   {
     "remote": "github",
