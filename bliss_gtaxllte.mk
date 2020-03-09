@@ -40,6 +40,9 @@ PRODUCT_PACKAGES += \
     Gallery2 \
     Music \
     Calendar
+    
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.picture_in_picture.xml:system/etc/permissions/android.software.picture_in_picture.xml \
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="gtaxllte" \
