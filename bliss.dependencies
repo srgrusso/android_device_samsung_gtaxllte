@@ -1,12 +1,6 @@
 [
   {
     "remote": "github",
-    "repository": "srgrusso/android_device_samsung_gtaxllte",
-    "target_path": "device/samsung/gtaxllte",
-    "revision": "bliss-q"
-  },
-  {
-    "remote": "github",
     "repository": "srgrusso/android_vendor",
     "target_path": "vendor/samsung/gtaxllte",
     "revision": "gtaxllte-lineage-17.1_64"
