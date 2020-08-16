@@ -22,6 +22,9 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_CHARACTERISTICS := tablet
 
+# Properties
+-include $(LOCAL_PATH)/system_prop.mk
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := hdpi
@@ -318,7 +321,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.adb.secure=0 \
     ro.secure=0
 
-# Offmode charger
+# Offline charger
 PRODUCT_PACKAGES += \
     charger_res_images \
     lineage_charger_res_images
