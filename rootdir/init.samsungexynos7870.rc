@@ -396,8 +396,6 @@ on fs
     chown system audio /dev/radio0
     chmod 0660 /dev/radio0
 
-#ARGOSD network_throughput
-    chown system system /dev/network_throughput
 # ARGOSD
 service argos-daemon /system/bin/argosd
     class main
